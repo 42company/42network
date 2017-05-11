@@ -1,0 +1,50 @@
+@import '../../components/shared/variables.css';
+
+.banner {
+  background-color: var(--color-dark-blue);
+}
+
+.banner-header {
+  color: white;
+}
+
+.normal-affiliate-button {
+  composes: normal from '../../components/shared/button.css';
+  background-color: var(--color-sky-blue);
+}
+
+.normal-advertiser-button {
+  composes: normal from '../../components/shared/button.css';
+  background-color: var(--color-light-green);
+}
+
+.description-header {
+  color: black;
+}
+
+.description {
+  padding: 20px;
+}
+
+.diagram-bg {
+  background-image: url('./images/section_bg.jpg');
+  background-size: contain;
+}
+
+.diagram {
+  width: 353px;
+  height: 125px;
+  background-image: url('./images/42_diagram.png');
+  background-size: contain;
+  margin: auto;
+}
+
+.slogan {
+  composes: slogan from '../../components/shared/section.css';
+  background-color: var(--color-dark-blue);
+}
+
+.partners {
+  color: var(--color-dark-blue);
+  padding: 20px;
+}

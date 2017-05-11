@@ -1,0 +1,27 @@
+.banner {
+  composes: banner from '../../components/shared/section.css';
+}
+
+.banner-image {
+  width: 275px;
+  height: 275px;
+  background-image: url('./images/affiliates_header.png');
+  background-size: contain;
+  order: 1;
+}
+
+.banner-description {
+  order: 2;
+}
+
+.contact {
+  composes: contact from '../../components/shared/section.css';
+}
+
+.benefits {
+  composes: benefits from '../../components/shared/section.css';
+}
+
+.slogan {
+  composes: slogan from '../../components/shared/section.css';
+}

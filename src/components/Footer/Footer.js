@@ -4,8 +4,10 @@ import style from './Footer.css'
 export default class Footer extends React.Component {
   render() {
     return (
-      <div className='Footer'>
-        Footer
+      <div className={style.root}>
+        <div className={style.container}>
+          (c)2017 <b>42network</b> All right reserved.
+        </div>
       </div>
     )
   }

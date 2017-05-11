@@ -1,0 +1,19 @@
+.banner {
+  width: 100%;
+  display: flex;
+  background-color: #eeeeee;
+  padding: 40px;
+}
+
+.contact {
+
+}
+
+.benefits {
+
+}
+
+.slogan {
+  text-align: center;
+  color: white;
+}

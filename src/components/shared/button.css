@@ -1,0 +1,13 @@
+.normal {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 15px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 4px;
+}
+
+.large {
+  border-radius: 2px;
+  padding: 20px;
+}

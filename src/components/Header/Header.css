@@ -1,7 +1,17 @@
-.root {
+@import '../shared/variables.css';
 
+.root {
+  padding: 15px;
+  display: block;
+  background-color: var(--color-sky-blue);
 }
 
 .container {
-  color: red;
+}
+
+.logo_image {
+  width: 140px;
+  height: 25px;
+  background: url('./logo_42network.png');
+  background-size: contain;
 }
