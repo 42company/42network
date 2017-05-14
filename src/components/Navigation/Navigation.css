@@ -6,4 +6,11 @@
   text-decoration: none;
   display: inline-block;
   padding: 3px 8px;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 25px;
+}
+
+.link:last-of-type {
+  margin-right: 50px;
 }

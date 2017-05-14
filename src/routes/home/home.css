@@ -1,11 +1,18 @@
 @import '../../components/shared/variables.css';
 
-.banner {
+.intro {
   background-color: var(--color-dark-blue);
+  text-align: center;
 }
 
-.banner-header {
+.intro-header {
   color: white;
+  margin-top: 45px;
+  margin-bottom: 0;
+}
+
+.intro-image {
+  margin-bottom: -10px;
 }
 
 .normal-affiliate-button {
@@ -18,17 +25,35 @@
   background-color: var(--color-light-green);
 }
 
+.description {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+  margin-top: -10px;
+}
+
 .description-header {
   color: black;
 }
 
-.description {
-  padding: 20px;
+.icon {
+  background: url('./images/42_inline.png') no-repeat;
+  background-size: contain;
+  width: 126px;
+  height: 81px;
+  margin: 0 auto;
+}
+
+.description-body {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 25px 25px 80px 25px;
 }
 
 .diagram-bg {
+  padding: 40px 30px;
   background-image: url('./images/section_bg.jpg');
-  background-size: contain;
+  background-size: cover;
 }
 
 .diagram {
@@ -39,12 +64,71 @@
   margin: auto;
 }
 
+.be-a-partner {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.partner-container {
+  width: 50%;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+}
+
+@media (max-width: 600px) {
+  .partner-container {
+    width: 100%;
+  }
+}
+
+.partner-header {
+  font-weight: lighter;
+}
+
+.partner-description {
+  margin: auto;
+  max-width: 350px;
+}
+
+.affiliates {
+  composes: partner-container;
+  order: 1;
+}
+
+.affiliate-button {
+  composes: large from '../../components/shared/button.css';
+  background-color: var(--color-sky-blue);
+  margin-top: 20px;
+}
+
+.advertisers {
+  composes: partner-container;
+  order: 2;
+}
+
+.advertiser-button {
+  composes: large from '../../components/shared/button.css';
+  background-color: var(--color-light-green);
+  margin-top: 20px;
+}
+
 .slogan {
   composes: slogan from '../../components/shared/section.css';
   background-color: var(--color-dark-blue);
+  padding: 30px;
+}
+
+.slogan-description {
+  font-size: 18px;
 }
 
 .partners {
   color: var(--color-dark-blue);
   padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
 }
