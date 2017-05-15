@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.section-container {
+  composes: section-container from '../../components/shared/section.css';
+}
+
 .intro-header {
   color: white;
   margin-top: 45px;
@@ -71,17 +75,15 @@
   flex-direction: row;
 }
 
+.flex-content-container {
+  composes: flex-content-container from '../../components/shared/section.css';
+}
+
 .partner-container {
-  width: 50%;
+  composes: flex-box from '../../components/shared/section.css';
   color: white;
   text-align: center;
   font-weight: lighter;
-}
-
-@media (max-width: 600px) {
-  .partner-container {
-    width: 100%;
-  }
 }
 
 .partner-header {
@@ -118,11 +120,10 @@
 .slogan {
   composes: slogan from '../../components/shared/section.css';
   background-color: var(--color-dark-blue);
-  padding: 30px;
 }
 
 .slogan-description {
-  font-size: 18px;
+  composes: slogan-description from '../../components/shared/section.css';
 }
 
 .partners {
