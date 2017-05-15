@@ -58,12 +58,58 @@ export default class Home extends React.Component {
             </div>
           </section>
           <section className={style['partners']}>
-            <div className={style['section-container']}>
+            <div className={style['partner-section-container']}>
               <div className={style['partners-header']}>
                 Our Advertising partners
               </div>
+              <div className={style['partner-wrapper']}>
+                <div className={style['advertise-partner-container']}>
+                  <div className={style['ic-dogether']} />
+                </div>
+                <div className={style['advertise-partner-container']}>
+                  <div className={style['ic-myntra']} />
+                </div>
+                <div className={style['advertise-partner-container']}>
+                  <div className={style['ic-flipkart']} />
+                </div>
+                <div className={style['advertise-partner-container']}>
+                  <div className={style['ic-orahi']} />
+                </div>
+                <div className={style['advertise-partner-container']}>
+                  <div className={style['ic-uc']} />
+                </div>
+                <div className={style['advertise-partner-container']}>
+                  <div className={style['ic-abof']} />
+                </div>
+                <div className={style['advertise-partner-container']}>
+                  <div className={style['ic-buyhatke']} />
+                </div>
+                <div className={style['advertise-partner-container']}>
+                  <div className={style['ic-panelstation']} />
+                </div>
+              </div>
               <div className={style['partners-header']}>
                 Our Publisher partners
+              </div>
+              <div className={style['partner-wrapper']}>
+                <div className={style['publisher-partner-container']}>
+                  <div className={style['ic-mobtray']} />
+                </div>
+                <div className={style['publisher-partner-container']}>
+                  <div className={style['ic-adscooper']} />
+                </div>
+                <div className={style['publisher-partner-container']}>
+                  <div className={style['ic-khing']} />
+                </div>
+                <div className={style['publisher-partner-container']}>
+                  <div className={style['ic-adcanopus']} />
+                </div>
+                <div className={style['publisher-partner-container']}>
+                  <div className={style['ic-adsizzler']} />
+                </div>
+                <div className={style['publisher-partner-container']}>
+                  <div className={style['ic-appsdiscover']} />
+                </div>
               </div>
             </div>
           </section>

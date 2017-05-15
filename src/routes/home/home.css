@@ -51,15 +51,8 @@
 .description-body {
   max-width: 600px;
   margin: 0 auto;
-  padding: 25px 25px 80px 25px;
+  padding: 25px 25px 50px 25px;
 }
-
-@media (max-width: 600px) {
-  .description-body {
-    padding: 25px 0 0 0;
-  }
-}
-
 
 .diagram-bg {
   padding: 40px 30px;
@@ -133,10 +126,124 @@
   composes: slogan-description from '../../components/shared/section.css';
 }
 
+.partner-section-container {
+  composes: section-container from '../../components/shared/section.css';
+  max-width: 800px;
+}
+
+.partners-header {
+  margin: 25px 0;
+}
+
 .partners {
   color: var(--color-dark-blue);
   padding: 20px;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
+}
+
+.partner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advertise-partner-container {
+  width: 25%;
+}
+
+.ic {
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 10px;
+}
+
+.ic-dogether {
+  composes: ic;
+  background-image: url('./images/ad_1_dogether.png');
+}
+
+.ic-myntra {
+  composes: ic;
+  background-image: url('./images/ad_2_myntra.png');
+}
+
+.ic-flipkart {
+  composes: ic;
+  background-image: url('./images/ad_3_flipkart.png');
+}
+
+.ic-orahi{
+  composes: ic;
+  background-image: url('./images/ad_4_orahi.png');
+}
+
+.ic-uc {
+  composes: ic;
+  background-image: url('./images/ad_5_uc.png');
+}
+
+.ic-abof {
+  composes: ic;
+  background-image: url('./images/ad_6_abof.png');
+}
+
+.ic-buyhatke {
+  composes: ic;
+  background-image: url('./images/ad_7_buyhatke.png');
+}
+
+.ic-panelstation {
+  composes: ic;
+  background-image: url('./images/ad_8_panelstation.png');
+}
+
+.publisher-partner-container {
+  width: 33.3%;
+}
+
+.ic-mobtray {
+  composes: ic;
+  background-image: url('./images/pb_1_mobtray.png');
+}
+
+.ic-adscooper {
+  composes: ic;
+  background-image: url('./images/pb_2_adscooper.png');
+}
+
+.ic-khing {
+  composes: ic;
+  background-image: url('./images/pb_3_khing.png');
+}
+
+.ic-adcanopus {
+  composes: ic;
+  background-image: url('./images/pb_4_adcanopus.png');
+}
+
+.ic-adsizzler {
+  composes: ic;
+  background-image: url('./images/pb_5_adsizzler.png');
+}
+
+.ic-appsdiscover {
+  composes: ic;
+  background-image: url('./images/pb_6_appsdiscover.png');
+}
+
+@media (max-width: 600px) {
+  .description-body {
+    padding: 25px 0 0 0;
+  }
+
+  .publisher-partner-container {
+    width: 50%;
+  }
+
+  .advertise-partner-container {
+    width: 50%;
+  }
 }
