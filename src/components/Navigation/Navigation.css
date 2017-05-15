@@ -14,3 +14,13 @@
 .link:last-of-type {
   margin-right: 50px;
 }
+
+@media (max-width: 600px) {
+  .link {
+    margin-right: 15px;
+  }
+
+  .link:last-of-type {
+    margin-right: 15px;
+  }
+}

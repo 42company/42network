@@ -1,27 +1,139 @@
+@import '../../components/shared/variables.css';
+
+.section-container {
+  composes: section-container from '../../components/shared/section.css';
+}
+
+.flex-box {
+  composes: flex-box from '../../components/shared/section.css';
+}
+
+.flex-content-container {
+  composes: flex-content-container from '../../components/shared/section.css';
+}
+
 .banner {
   composes: banner from '../../components/shared/section.css';
 }
 
+.banner-section-container {
+  composes: banner-section-container from '../../components/shared/section.css';
+}
+
 .banner-image {
-  width: 275px;
-  height: 275px;
+  composes: banner-image from '../../components/shared/section.css';
   background-image: url('./images/adv_header.png');
-  background-size: contain;
-  order: 1;
 }
 
 .banner-description {
-  order: 2;
+  composes: banner-description from '../../components/shared/section.css';
+}
+
+.banner-description-head {
+  composes: banner-description-head from '../../components/shared/section.css';
+  color: var(--color-sky-blue);
+}
+
+.banner-description-body {
+  composes: banner-description-body from '../../components/shared/section.css';
 }
 
 .contact {
   composes: contact from '../../components/shared/section.css';
 }
 
+.description-wrapper {
+  composes: description-wrapper from '../../components/shared/section.css';
+}
+
+.divider {
+  composes: divider from '../../components/shared/section.css';
+}
+
+.ic-media {
+  composes: contact-ic from '../../components/shared/section.css';
+  background-image: url('./images/adv_icon_media.png');
+}
+
+.ic-network {
+  composes: contact-ic from '../../components/shared/section.css';
+  background-image: url('./images/adv_icon_adnetworkpng.png');
+}
+
+.contact {
+  composes: contact from '../../components/shared/section.css';
+}
+
+.flex-description-content-container {
+  composes: flex-description-content-container from '../../components/shared/section.css';
+}
+
+.description-body {
+  composes: description-body from '../../components/shared/section.css';
+}
+
+.contact-header {
+  composes: contact-header from '../../components/shared/section.css';
+  color: var(--color-sky-blue);
+}
+
+.form-label {
+  composes: form-label from '../../components/shared/section.css';
+}
+
+.text-input {
+  composes: text-input from '../../components/shared/section.css';
+}
+
+.submit {
+  composes: submit from '../../components/shared/section.css';
+  background-color: var(--color-sky-blue);
+}
+
 .benefits {
   composes: benefits from '../../components/shared/section.css';
+  background-color: var(--color-sky-blue);
+}
+
+.ic-performance {
+  composes: ic from '../../components/shared/section.css';
+  background-image: url('./images/adv_img_1.png');
+}
+
+.ic-technology-support {
+  composes: ic from '../../components/shared/section.css';
+  background-image: url('./images/adv_img_2.png');
+}
+
+.ic-ecpm {
+  composes: ic from '../../components/shared/section.css';
+  margin-top: 20px;
+  background-image: url('./images/adv_img_3.png');
+}
+
+.ic-account-management {
+  composes: ic from '../../components/shared/section.css';
+  margin-top: 20px;
+  background-image: url('./images/adv_img_4.png');
+}
+
+.benefits-section-container {
+  composes: benefits-section-container from '../../components/shared/section.css';
+}
+
+.benefits-header {
+  composes: benefits-header from '../../components/shared/section.css';
+}
+
+.benefits-description {
+  composes: benefits-description from '../../components/shared/section.css';
 }
 
 .slogan {
   composes: slogan from '../../components/shared/section.css';
+  background-color: var(--color-light-green);
+}
+
+.slogan-description {
+  composes: slogan-description from '../../components/shared/section.css';
 }

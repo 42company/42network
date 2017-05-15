@@ -6,12 +6,15 @@
   background-color: var(--color-sky-blue);
 }
 
-.container {
-}
-
 .logo_image {
   width: 140px;
   height: 25px;
   background: url('./logo_42network.png');
   background-size: contain;
+}
+
+.logo {
+  display: block;
+  width: 140px;
+  height: 25px;
 }

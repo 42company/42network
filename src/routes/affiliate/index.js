@@ -7,7 +7,7 @@ export default class Affiliate extends React.Component {
     return (
       <Layout>
         <section className={style['banner']}>
-          <div className={style['section-container']}>
+          <div className={style['banner-section-container']}>
             <div className={style['banner-image']} />
             <div className={style['banner-description']}>
               <h1 className={style['banner-description-head']}>You are mobile App or a Mobile Service Provider!</h1>
@@ -52,16 +52,16 @@ export default class Affiliate extends React.Component {
               <div className={style['flex-content-container']}>
                 <form>
                   <h3 className={style['contact-header']}>CONTACT US</h3>
-                  <label htmlFor='name'>Name</label>
-                  <input type='text' id='name' name='name' />
-                  <label htmlFor='name'>Company</label>
-                  <input type='text' id='company' name='company' />
-                  <label htmlFor='name'>Email</label>
-                  <input type='text' id='e-mail' name='e-mail' />
-                  <label htmlFor='name'>Phone number</label>
-                  <input type='text' id='phone-number' name='phone-number' />
-                  <label htmlFor='name'>Skype ID</label>
-                  <input type='text' id='skype' name='skype' />
+                  <label className={style['form-label']} htmlFor='name'>Name</label>
+                  <input className={style['text-input']} type='text' id='name' name='name' />
+                  <label className={style['form-label']} htmlFor='name'>Company</label>
+                  <input className={style['text-input']} type='text' id='company' name='company' />
+                  <label className={style['form-label']} htmlFor='name'>Email</label>
+                  <input className={style['text-input']} type='text' id='e-mail' name='e-mail' />
+                  <label className={style['form-label']} htmlFor='name'>Phone number</label>
+                  <input className={style['text-input']} type='text' id='phone-number' name='phone-number' />
+                  <label className={style['form-label']} htmlFor='name'>Skype ID</label>
+                  <input className={style['text-input']} type='text' id='skype' name='skype' />
                   <input className={style['submit']} type='submit' value='Submit' />
                 </form>
               </div>
@@ -69,7 +69,7 @@ export default class Affiliate extends React.Component {
           </div>
         </section>
         <section className={style['benefits']}>
-          <div className={style['section-container']}>
+          <div className={style['benefits-section-container']}>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
                 <div className={style['ic-quality']} />

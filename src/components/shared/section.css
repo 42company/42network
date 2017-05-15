@@ -1,3 +1,5 @@
+@import './variables.css';
+
 .banner {
   width: 100%;
   background-color: #eee;
@@ -23,13 +25,6 @@
   padding: 0 25px;
 }
 
-.contact {
-}
-
-.benefits {
-
-}
-
 .slogan {
   text-align: center;
   color: white;
@@ -37,4 +32,141 @@
 
 .slogan-description {
   font-size: 18px;
+}
+
+.banner-section-container {
+  composes: section-container;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.banner-image {
+  width: 138px;
+  height: 138px;
+  background-size: contain;
+  order: 1;
+  margin-right: 20px;
+}
+
+@media (max-width: 750px) {
+  .banner-image {
+    margin: 0 auto;
+  }
+}
+
+.banner-description {
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: middle;
+  order: 2;
+}
+
+@media (max-width: 750px) {
+  .banner-description {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.banner-description-head {
+  margin-bottom: 5px;
+}
+
+.banner-description-body {
+  margin-top: 0;
+  color: var(--color-grey);
+}
+
+.contact-ic {
+  width: 45px;
+  height: 45px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.description-wrapper {
+  padding-left: 55px;
+}
+
+.divider {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgba(200, 200, 200, 0.5);
+}
+
+.contact .section-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-description-content-container {
+  composes: flex-content-container;
+  padding-left: 0;
+}
+
+.description-body {
+  padding-right: 75px;
+  font-size: 12px;
+  color: var(--color-grey);
+}
+
+.form-label {
+  font-size: 12px;
+  color: var(--color-grey);
+}
+
+.text-input {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #ddd;
+  height: 30px;
+  margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+  .description-body {
+    padding-right: 0;
+  }
+}
+
+.submit {
+  composes: normal from './button.css';
+  margin: 10px 0 0 0;
+  float: right;
+}
+
+.benefits {
+  text-align: center;
+}
+
+.benefits-section-container {
+  composes: section-container;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ic {
+  width: 120px;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.benefits-header {
+  color: white;
+  font-weight: bold;
+}
+
+.benefits-description {
+  color: white;
+  font-size: 12px;
 }

@@ -49,10 +49,17 @@
 }
 
 .description-body {
-  max-width: 450px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 25px 25px 80px 25px;
 }
+
+@media (max-width: 600px) {
+  .description-body {
+    padding: 25px 0 0 0;
+  }
+}
+
 
 .diagram-bg {
   padding: 40px 30px;
@@ -61,11 +68,11 @@
 }
 
 .diagram {
-  width: 353px;
   height: 125px;
   background-image: url('./images/42_diagram.png');
+  background-repeat: no-repeat;
   background-size: contain;
-  margin: auto;
+  background-position: center;
 }
 
 .be-a-partner {
