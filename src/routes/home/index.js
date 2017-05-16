@@ -15,7 +15,7 @@ export default class Home extends React.Component {
         <div className={style['root']}>
           <section className={style['intro']}>
             <div className={style['section-container']}>
-              <h1 className={style['intro-header']}>42network for online mobile performance</h1>
+              <h1 className={style['intro-header']}>42Network for online mobile performance</h1>
               <div>
                 <Link className={style['normal-affiliate-button']} to='/affiliate'>Affiliate</Link>
                 <Link className={style['normal-advertiser-button']} to='/advertiser'>Advertiser</Link>
