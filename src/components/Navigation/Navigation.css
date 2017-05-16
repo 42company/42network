@@ -17,10 +17,10 @@
 
 @media (max-width: 600px) {
   .link {
-    margin-right: 15px;
+    margin-right: 0px;
   }
 
   .link:last-of-type {
-    margin-right: 15px;
+    margin-right: 0px;
   }
 }

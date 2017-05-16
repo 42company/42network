@@ -6,11 +6,18 @@
   background-color: var(--color-sky-blue);
 }
 
-.logo_image {
+.logo-image {
   width: 140px;
   height: 25px;
-  background: url('./logo_42network.png');
+  background-image: url('./logo_42network.png');
+  background-repeat: no-repeat;
   background-size: contain;
+}
+
+@media (max-width: 400px) {
+  .logo-image {
+    background-image: url('./42_logo_m.png');
+  }
 }
 
 .logo {
