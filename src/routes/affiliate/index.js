@@ -14,8 +14,8 @@ export default class Affiliate extends React.Component {
           <div className={style['banner-section-container']}>
             <div className={style['banner-image']} />
             <div className={style['banner-description']}>
-              <h1 className={style['banner-description-head']}>You are mobile App or a Mobile Service Provider!</h1>
-              <p className={style['banner-description-body']}>We deliver users & performance</p>
+              <h1 className={style['banner-description-head']}>You are mobile publisher,ad network or media buyer!</h1>
+              <p className={style['banner-description-body']}>We help you monetise your traffic!</p>
             </div>
           </div>
         </section>
