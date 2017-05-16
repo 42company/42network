@@ -9,7 +9,7 @@ metadata:
 spec:
   tls:
   - hosts:
-    - 42network.42.company
+    - 42network.in
     secretName: 42network-tls
   rules:
     - host: 42network.in
