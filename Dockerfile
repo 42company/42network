@@ -8,4 +8,4 @@ RUN yarn install
 
 COPY . /usr/src/app
 RUN yarn build
-CMD [ "yarn", "serve", "-s", "build"]
+CMD [ "yarn", "server"]

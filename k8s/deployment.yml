@@ -1,0 +1,28 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: 42network
+  namespace: production
+spec:
+  replicas: 1
+  revisionHistoryLimit: 5
+  template:
+    metadata:
+      labels:
+        app: 42network
+        role: web
+    spec:
+      containers:
+      - name: app
+        image: 744045856567.dkr.ecr.us-east-1.amazonaws.com/42network:dockerize.1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5000
+          name: http
+        resources:
+          limits:
+            cpu: 10m
+            memory: 128Mi
+          requests:
+            cpu: 10m
+            memory: 64Mi
