@@ -5,6 +5,10 @@ import style from './home.css'
 import introImage from './images/img_intro_2.png'
 
 export default class Home extends React.Component {
+  componentDidMount(prevProps) {
+    window.scrollTo(0, 0)
+  }
+
   render () {
     return (
       <Layout>
@@ -59,7 +63,7 @@ export default class Home extends React.Component {
           </section>
           <section className={style['partners']}>
             <div className={style['partner-section-container']}>
-              <div className={style['partners-header']}>
+              <div className={style['advertise-partners-header']}>
                 Our Advertising partners
               </div>
               <div className={style['partner-wrapper']}>
@@ -88,7 +92,7 @@ export default class Home extends React.Component {
                   <div className={style['ic-panelstation']} />
                 </div>
               </div>
-              <div className={style['partners-header']}>
+              <div className={style['publisher-partners-header']}>
                 Our Publisher partners
               </div>
               <div className={style['partner-wrapper']}>

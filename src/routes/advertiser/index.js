@@ -3,6 +3,10 @@ import Layout from '../../components/Layout'
 import style from './advertiser.css'
 
 export default class Advertiser extends React.Component {
+  componentDidMount(prevProps) {
+    window.scrollTo(0, 0)
+  }
+
   render () {
     return (
       <Layout>

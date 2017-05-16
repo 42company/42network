@@ -3,6 +3,10 @@ import Layout from '../../components/Layout'
 import style from './affiliate.css'
 
 export default class Affiliate extends React.Component {
+  componentDidMount(prevProps) {
+    window.scrollTo(0, 0)
+  }
+
   render () {
     return (
       <Layout>

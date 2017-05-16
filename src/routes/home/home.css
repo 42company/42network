@@ -132,8 +132,12 @@
   max-width: 800px;
 }
 
-.partners-header {
+.advertise-partners-header {
   margin: 25px 0;
+}
+
+.publisher-partners-header {
+  margin: 50px 0 25px 0;
 }
 
 .partners {
