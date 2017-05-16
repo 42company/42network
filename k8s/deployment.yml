@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: 744045856567.dkr.ecr.us-east-1.amazonaws.com/42network:dockerize.1
+        image: 744045856567.dkr.ecr.us-east-1.amazonaws.com/42network
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
