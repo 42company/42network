@@ -9,7 +9,7 @@ export default class Header extends React.Component {
       <div className={style.root}>
         <div className={style.container}>
           <Navigation />
-          <div className={style.logo_image}>
+          <div className={style['logo-image']}>
             <Link className={style.logo} to='/' />
           </div>
         </div>

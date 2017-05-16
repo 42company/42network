@@ -6,8 +6,9 @@ export default class Footer extends React.Component {
   render() {
     return (
       <div className={style.root} role='navigation'>
-        <Link className={style.link} to="/affiliate">Affiliate</Link>
-        <Link className={style.link} to="/advertiser">Advertiser</Link>
+        <Link className={style.link} to="/">Home</Link>
+        <Link className={style.link} to="/affiliate">Affiliates</Link>
+        <Link className={style.link} to="/advertiser">Advertisers</Link>
       </div>
     )
   }
