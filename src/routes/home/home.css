@@ -3,6 +3,7 @@
 .intro {
   background-color: var(--color-dark-blue);
   text-align: center;
+  overflow: hidden;
 }
 
 .section-container {
