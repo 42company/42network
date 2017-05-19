@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Layout from '../../components/Layout'
 import style from './home.css'
-import introImage from './images/img_intro_2.png'
+import introImage from './images/img_intro_4.png'
+import skyLine from './images/bottom_skyline.png'
 
 export default class Home extends React.Component {
   componentDidMount(prevProps) {
@@ -17,8 +18,8 @@ export default class Home extends React.Component {
             <div className={style['section-container']}>
               <h1 className={style['intro-header']}>42Network for online mobile performance</h1>
               <div>
-                <Link className={style['normal-affiliate-button']} to='/affiliate'>Affiliate</Link>
-                <Link className={style['normal-advertiser-button']} to='/advertiser'>Advertiser</Link>
+                <Link className={style['normal-affiliate-button']} to='/affiliate'>Affiliates</Link>
+                <Link className={style['normal-advertiser-button']} to='/advertiser'>Advertisers</Link>
               </div>
             </div>
             <img className={style['intro-image']} src={introImage} width='100%' alt='42network-intro' />
@@ -41,15 +42,15 @@ export default class Home extends React.Component {
                 <div className={style['affiliates']}>
                   <div className={style['flex-container']}>
                     <h1 className={style['partner-header']}>Affiliates</h1>
-                    <div className={style['partner-description']}>You are publisher, ad network or media buyer. We deliver local monetisation</div>
+                    <div className={style['partner-description']}>You are publisher,<br />ad network or media buyer. We deliver local monetisation</div>
                     <Link className={style['affiliate-button']} to='/affiliate'>42 for Affiliates</Link>
                   </div>
                 </div>
                 <div className={style['advertisers']}>
                   <div className={style['flex-container']}>
-                    <h1 className={style['partner-header']}>Advertiser</h1>
+                    <h1 className={style['partner-header']}>Advertisers</h1>
                     <div className={style['partner-description']}>You are a mobile service provider or app developer. We deliver users, distribution and sales.</div>
-                    <Link className={style['advertiser-button']} to='/advertiser'>42 for Advertiser</Link>
+                    <Link className={style['advertiser-button']} to='/advertiser'>42 for Advertisers</Link>
                   </div>
                 </div>
               </div>
@@ -92,30 +93,8 @@ export default class Home extends React.Component {
                   <div className={style['ic-panelstation']} />
                 </div>
               </div>
-              <div className={style['publisher-partners-header']}>
-                Our Publisher partners
-              </div>
-              <div className={style['partner-wrapper']}>
-                <div className={style['publisher-partner-container']}>
-                  <div className={style['ic-mobtray']} />
-                </div>
-                <div className={style['publisher-partner-container']}>
-                  <div className={style['ic-adscooper']} />
-                </div>
-                <div className={style['publisher-partner-container']}>
-                  <div className={style['ic-khing']} />
-                </div>
-                <div className={style['publisher-partner-container']}>
-                  <div className={style['ic-adcanopus']} />
-                </div>
-                <div className={style['publisher-partner-container']}>
-                  <div className={style['ic-adsizzler']} />
-                </div>
-                <div className={style['publisher-partner-container']}>
-                  <div className={style['ic-appsdiscover']} />
-                </div>
-              </div>
             </div>
+            <img className={style['intro-image']} src={skyLine} width='100%' alt='skyline' />
           </section>
         </div>
       </Layout>

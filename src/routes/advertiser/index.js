@@ -14,7 +14,7 @@ export default class Advertiser extends React.Component {
           <div className={style['banner-section-container']}>
             <div className={style['banner-image']} />
             <div className={style['banner-description']}>
-              <h1 className={style['banner-description-head']}>You are mobile App or a Mobile Service Provider!</h1>
+              <h1 className={style['banner-description-head']}>You are a mobile app<br />or mobile service provider.</h1>
               <p className={style['banner-description-body']}>We deliver users & performance</p>
             </div>
           </div>
@@ -34,10 +34,7 @@ export default class Advertiser extends React.Component {
                     We focus on premium offers for premium media buyers
                   </p>
                 </div>
-              </div>
-            </div>
-            <div className={style['flex-box']}>
-              <div className={style['flex-description-content-container']}>
+                <div className={style['divider']} />
                 <div className={style['ic-network']} />
                 <div className={style['description-wrapper']}>
                   <h3 className={style['contact-header']}>
@@ -51,6 +48,24 @@ export default class Advertiser extends React.Component {
                     minimum bids for the media buyers in your network.
                   </p>
                 </div>
+              </div>
+            </div>
+            <div className={style['flex-box']}>
+              <div className={style['flex-content-container']}>
+                <form>
+                  <h3 className={style['contact-header']}>CONTACT US</h3>
+                  <label className={style['form-label']} htmlFor='name'>Name</label>
+                  <input className={style['text-input']} type='text' id='name' name='name' />
+                  <label className={style['form-label']} htmlFor='name'>Company</label>
+                  <input className={style['text-input']} type='text' id='company' name='company' />
+                  <label className={style['form-label']} htmlFor='name'>Email</label>
+                  <input className={style['text-input']} type='text' id='e-mail' name='e-mail' />
+                  <label className={style['form-label']} htmlFor='name'>Phone number</label>
+                  <input className={style['text-input']} type='text' id='phone-number' name='phone-number' />
+                  <label className={style['form-label']} htmlFor='name'>Skype ID</label>
+                  <input className={style['text-input']} type='text' id='skype' name='skype' />
+                  <input className={style['submit']} type='submit' value='Submit' />
+                </form>
               </div>
             </div>
           </div>

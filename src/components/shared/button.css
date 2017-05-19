@@ -14,7 +14,7 @@
   border: 0 none;
   border-radius: 4px;
 
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 1.3;
   appearance: none;
@@ -36,12 +36,12 @@
 
 .normal {
   composes: button;
-  font-size: 15px;
+  font-size: 16px;
   padding: 10px 26px;
 }
 
 .large {
   composes: button;
-  font-size: 18px;
+  font-size: 19px;
   padding: 20px 30px;
 }
