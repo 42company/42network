@@ -35,7 +35,10 @@ export default class Affiliate extends React.Component {
                     Our knowledge of app mechanics helps us target the right users.
                   </p>
                 </div>
-                <div className={style['divider']} />
+              </div>
+            </div>
+            <div className={style['flex-box']}>
+              <div className={style['flex-description-content-container']}>
                 <div className={style['ic-provider']} />
                 <div className={style['description-wrapper']}>
                   <h3 className={style['contact-header']}>
@@ -50,24 +53,6 @@ export default class Affiliate extends React.Component {
                     best with maximum and best quality reach within performance parameters.
                   </p>
                 </div>
-              </div>
-            </div>
-            <div className={style['flex-box']}>
-              <div className={style['flex-content-container']}>
-                <form>
-                  <h3 className={style['contact-header']}>CONTACT US</h3>
-                  <label className={style['form-label']} htmlFor='name'>Name</label>
-                  <input className={style['text-input']} type='text' id='name' name='name' />
-                  <label className={style['form-label']} htmlFor='name'>Company</label>
-                  <input className={style['text-input']} type='text' id='company' name='company' />
-                  <label className={style['form-label']} htmlFor='name'>Email</label>
-                  <input className={style['text-input']} type='text' id='e-mail' name='e-mail' />
-                  <label className={style['form-label']} htmlFor='name'>Phone number</label>
-                  <input className={style['text-input']} type='text' id='phone-number' name='phone-number' />
-                  <label className={style['form-label']} htmlFor='name'>Skype ID</label>
-                  <input className={style['text-input']} type='text' id='skype' name='skype' />
-                  <input className={style['submit']} type='submit' value='Submit' />
-                </form>
               </div>
             </div>
           </div>
