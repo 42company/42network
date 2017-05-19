@@ -13,7 +13,7 @@
 .intro-header {
   color: white;
   margin-top: 45px;
-  margin-bottom: 0;
+  font-size: 30px;
 }
 
 .intro-image {
@@ -129,7 +129,7 @@
 
 .partner-section-container {
   composes: section-container from '../../components/shared/section.css';
-  max-width: 800px;
+  max-width: 600px;
 }
 
 .advertise-partners-header {
@@ -142,9 +142,9 @@
 
 .partners {
   color: var(--color-dark-blue);
-  padding: 20px;
+  padding-top: 20px;
   text-align: center;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: bold;
 }
 
@@ -158,11 +158,11 @@
 }
 
 .ic {
-  height: 70px;
+  height: 80px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .ic-dogether {
@@ -202,41 +202,7 @@
 
 .ic-panelstation {
   composes: ic;
-  background-image: url('./images/ad_8_panelstation.png');
-}
-
-.publisher-partner-container {
-  width: 33.3%;
-}
-
-.ic-mobtray {
-  composes: ic;
-  background-image: url('./images/pb_1_mobtray.png');
-}
-
-.ic-adscooper {
-  composes: ic;
-  background-image: url('./images/pb_2_adscooper.png');
-}
-
-.ic-khing {
-  composes: ic;
-  background-image: url('./images/pb_3_khing.png');
-}
-
-.ic-adcanopus {
-  composes: ic;
-  background-image: url('./images/pb_4_adcanopus.png');
-}
-
-.ic-adsizzler {
-  composes: ic;
-  background-image: url('./images/pb_5_adsizzler.png');
-}
-
-.ic-appsdiscover {
-  composes: ic;
-  background-image: url('./images/pb_6_appsdiscover.png');
+  background-image: url('./images/ad_8_panel.png');
 }
 
 @media (max-width: 600px) {

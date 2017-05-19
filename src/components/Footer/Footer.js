@@ -6,7 +6,7 @@ export default class Footer extends React.Component {
     return (
       <div className={style.root}>
         <div className={style.container}>
-          (c)2017 <b>42network</b> All rights reserved.
+          (c)2017 <b>42Network</b> All rights reserved.
         </div>
       </div>
     )
