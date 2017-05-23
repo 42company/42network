@@ -3,6 +3,13 @@ def repository = 'https://744045856567.dkr.ecr.us-east-1.amazonaws.com'
 def imageTag = "${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
 def label = "buildpod.${env.JOB_NAME}.${imageTag}".replace('-', '_').replace('/', '_')
 
+properties([
+  parameters([
+    string(name: 'MANDRILL_ACCOUNT', defaultValue: 'dev@42.company'),
+    string(name: 'MANDRILL_API_KEY', defaultValue: ''),
+  ])
+])
+
 podTemplate(
   label: label,
   containers: [
@@ -26,7 +33,11 @@ podTemplate(
 
           stage('Docker build') {
             sh """
-              docker build -t ${appName} .
+              docker build -f Dockerfile \
+                --build-arg MANDRILL_ACCOUNT=${params.MANDRILL_ACCOUNT} \
+                --build-arg MANDRILL_API_KEY=${params.MANDRILL_API_KEY} \
+                -t ${appName} \
+              .
             """
           }
 
