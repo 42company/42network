@@ -1,3 +1,13 @@
+@import '../shared/variables.css';
+
+.affiliate-contact-header {
+  color: var(--color-light-green);
+}
+
+.advertiser-contact-header {
+  color: var(--color-sky-blue);
+}
+
 .label {
   font-size: 15px;
   color: var(--color-grey);
@@ -20,7 +30,12 @@ textarea {
   border-color: #ddd;
 }
 
-.submit {
+.affiliate-submit {
+  composes: submit from '../shared/section.css';
+  background-color: var(--color-light-green);
+}
+
+.advertiser-submit {
   composes: submit from '../shared/section.css';
   background-color: var(--color-sky-blue);
 }

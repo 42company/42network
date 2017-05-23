@@ -10,6 +10,7 @@ app.post('/contact', (req, res, next) => {
   const mandrillClient = new mandrill.Mandrill(process.env.MANDRILL_API_KEY)
   const message = {
     html: req.body.html,
+    subject: req.body.type + ' partner inquiry',
     from_email: process.env.MANDRILL_ACCOUNT,
     to: [{ email: process.env.CONTACT_EMAIL }]
   }

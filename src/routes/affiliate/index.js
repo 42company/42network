@@ -55,7 +55,7 @@ export default class Affiliate extends React.Component {
             </div>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <Contact history={this.props.history}/>
+                <Contact history={this.props.history} partnerType='affiliate' />
               </div>
             </div>
           </div>

@@ -24,7 +24,7 @@ export default class Contact extends React.Component {
     const alertMessage = 'Something goes wrong please send information to contact@42network.in'
     fetch('/contact', {
       method: 'POST',
-      body: JSON.stringify({ html: tableify(this.state.formData)}),
+      body: JSON.stringify({ html: tableify(this.state.formData), type: this.props.partnerType}),
       headers: {
         'CONTENT-TYPE': 'application/json'
       }
@@ -38,9 +38,10 @@ export default class Contact extends React.Component {
   }
 
   render() {
+    const { partnerType } = this.props
     return (
       <form>
-        <h3 className={style['contact-header']}>CONTACT US</h3>
+        <h3 className={style[`${partnerType}-contact-header`]}>CONTACT US</h3>
         <label className={style['label']} htmlFor='name'>Name</label>
         <input className={style['input']} type='text' onChange={this.handleChange.bind(this)} id='name' name='name' />
         <label className={style['label']} htmlFor='company'>Company</label>
@@ -53,7 +54,7 @@ export default class Contact extends React.Component {
         <input className={style['input']} type='text' onChange={this.handleChange.bind(this)} id='skype' name='skype' />
         <label className={style['label']} htmlFor='message'>Message</label>
         <textarea className={style['input']} type='text' onChange={this.handleChange.bind(this)} id='message' name='message' />
-        <button className={style['submit']} type='submit' value='Submit' onClick={this.handleSubmit.bind(this)}>Submit</button>
+        <button className={style[`${partnerType}-submit`]} type='submit' value='Submit' onClick={this.handleSubmit.bind(this)}>Submit</button>
       </form>
     )
   }
