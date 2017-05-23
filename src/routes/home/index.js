@@ -29,7 +29,7 @@ export default class Home extends React.Component {
               <h1 className={style['description-header']}>The Answer to the Ultimate Question of<br />Life, The Universe, and Everything:</h1>
               <div className={style['icon']} />
               <p className={style['description-body']}>
-                <b>42Company India Pvt Ltd</b> is a fast growing online media company focussing on mobile entertainment services in India.
+                <b>42Company India Pvt Ltd</b> is a fast growing online media company focusing on mobile entertainment services in India.
                 Founded by mobile industry veterans, privately funded, we are an independent, owner-managed company.
                 We have a dedicated team of professionals looking at analysing your advertising needs and providing best solutions.
               </p>

@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "body-parser": "^1.17.2",
+    "concurrently": "^3.4.0",
+    "global": "^4.3.2",
     "immutability-helper": "^2.2.0",
     "mandrill-api": "^1.0.45",
     "react": "^15.5.4",
@@ -51,7 +54,7 @@
     "whatwg-fetch": "2.0.2"
   },
   "scripts": {
-    "start": "node scripts/start.js",
+    "start": "concurrently \"node scripts/server.js\" \"node scripts/start.js\"",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "server": "node scripts/server.js"
@@ -87,5 +90,6 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  }
+  },
+  "proxy": "http://localhost:5000"
 }
