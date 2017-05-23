@@ -26,11 +26,11 @@ export default class Contact extends React.Component {
     const message = {
       'html': tableify(this.state.formData),
       'from_email': process.env.MANDRILL_ACCOUNT,
-      'to': [{'email': 'contact@42network.in'}]
+      'to': [{'email': 'cigon@naver.com'}]
     }
     const alertMessage = 'Something goes wrong please send information to contact@42network.in'
 
-    mandrillClient.messages.send({ "message": message }, (result) => {
+    mandrillClient.messages.send({ message }, (result) => {
       result[0].status === 'sent' ? this.props.history.push('/sent', { sent: true }) : alert(alertMessage)
     }, (error) => {
       alert(alertMessage)
