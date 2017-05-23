@@ -26,7 +26,7 @@ export default class Contact extends React.Component {
     const message = {
       'html': tableify(this.state.formData),
       'from_email': process.env.MANDRILL_ACCOUNT,
-      'to': [{'email': 'cigon@naver.com'}]
+      'to': [{'email': 'contact@42network.in'}]
     }
     const alertMessage = 'Something goes wrong please send information to contact@42network.in'
 
