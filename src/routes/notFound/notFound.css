@@ -1,0 +1,28 @@
+.submitted {
+  height: calc(100vh - 135px);
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 28px;
+}
+
+.submitted-wrapper {
+  margin: 0 auto;
+  margin-top: -100px;
+}
+
+.submitted-header {
+  font-weight: 300;
+}
+
+.submitted-image {
+  width: 200px;
+  height: 130px;
+  background-image: url('./images/img_404.png');
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+  margin: 0 auto;
+  margin-top: 40px;
+}
