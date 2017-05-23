@@ -1,14 +1,19 @@
 import React from 'react'
+import { Redirect } from 'react-router-dom'
+import Layout from '../../components/Layout'
+import style from './notFound.css'
 
 export default class notFound extends React.Component {
   render() {
-    console.log(this.state)
     return (
-      <div>
-        <div>
-          <h1>Sorry, the page you were trying to view does not exist.</h1>
-        </div>
-      </div>
+      <Layout>
+        <section className={style['submitted']}>
+          <div className={style['submitted-wrapper']}>
+            <h1 className={style['submitted-header']}>The page you're looking for could not be found</h1>
+            <div className={style['submitted-image']}/>
+          </div>
+        </section>
+      </Layout>
     )
   }
 }
