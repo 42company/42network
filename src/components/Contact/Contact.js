@@ -30,7 +30,7 @@ export default class Contact extends React.Component {
     }
     const alertMessage = 'Something goes wrong please send information to contact@42network.in'
 
-    mandrillClient.messages.send({ "message": message }, (result) => {
+    mandrillClient.messages.send({ message }, (result) => {
       result[0].status === 'sent' ? this.props.history.push('/sent', { sent: true }) : alert(alertMessage)
     }, (error) => {
       alert(alertMessage)
