@@ -10,6 +10,11 @@
   composes: section-container from '../../components/shared/section.css';
 }
 
+.intro-section-container {
+  composes: section-container;
+  margin-top: 45px;
+}
+
 .intro-header {
   color: white;
   margin-top: 45px;

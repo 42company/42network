@@ -1,0 +1,26 @@
+.label {
+  font-size: 15px;
+  color: var(--color-grey);
+}
+
+.input {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #ddd;
+  height: 30px;
+  margin: 10px 0;
+  border-width: 2px;
+}
+
+textarea {
+  min-height: 60px;
+  max-width: 100%;
+  border-color: #ddd;
+}
+
+.submit {
+  composes: submit from '../shared/section.css';
+  background-color: var(--color-sky-blue);
+}

@@ -39,6 +39,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: 45px;
 }
 
 .banner-image {
@@ -61,14 +62,6 @@
   order: 2;
 }
 
-@media (max-width: 750px) {
-  .banner-description {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
 .banner-description-head {
   padding-left: 40px;
   margin-bottom: 5px;
@@ -79,6 +72,18 @@
   padding-left: 40px;
   margin-top: 0;
   color: var(--color-grey);
+}
+
+@media (max-width: 750px) {
+  .banner-description {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .banner-description-head, .banner-description-body {
+    padding-left: 0;
+  }
 }
 
 .contact-ic {
@@ -115,21 +120,6 @@
   padding-right: 75px;
   font-size: 15px;
   color: var(--color-grey);
-}
-
-.form-label {
-  font-size: 15px;
-  color: var(--color-grey);
-}
-
-.text-input {
-  width: 100%;
-  background-color: #eee;
-  border-radius: 3px;
-  border-style: solid;
-  border-color: #ddd;
-  height: 30px;
-  margin: 10px 0;
 }
 
 @media (max-width: 600px) {

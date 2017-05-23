@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../../components/Layout'
+import Contact from '../../components/Contact'
 import style from './affiliate.css'
 
 export default class Affiliate extends React.Component {
@@ -54,20 +55,7 @@ export default class Affiliate extends React.Component {
             </div>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <form>
-                  <h3 className={style['contact-header']}>CONTACT US</h3>
-                  <label className={style['form-label']} htmlFor='name'>Name</label>
-                  <input className={style['text-input']} type='text' id='name' name='name' />
-                  <label className={style['form-label']} htmlFor='name'>Company</label>
-                  <input className={style['text-input']} type='text' id='company' name='company' />
-                  <label className={style['form-label']} htmlFor='name'>Email</label>
-                  <input className={style['text-input']} type='text' id='e-mail' name='e-mail' />
-                  <label className={style['form-label']} htmlFor='name'>Phone number</label>
-                  <input className={style['text-input']} type='text' id='phone-number' name='phone-number' />
-                  <label className={style['form-label']} htmlFor='name'>Skype ID</label>
-                  <input className={style['text-input']} type='text' id='skype' name='skype' />
-                  <input className={style['submit']} type='submit' value='Submit' />
-                </form>
+                <Contact history={this.props.history}/>
               </div>
             </div>
           </div>

@@ -72,24 +72,6 @@
   composes: description-body from '../../components/shared/section.css';
 }
 
-.contact-header {
-  composes: contact-header from '../../components/shared/section.css';
-  color: var(--color-sky-blue);
-}
-
-.form-label {
-  composes: form-label from '../../components/shared/section.css';
-}
-
-.text-input {
-  composes: text-input from '../../components/shared/section.css';
-}
-
-.submit {
-  composes: submit from '../../components/shared/section.css';
-  background-color: var(--color-sky-blue);
-}
-
 .benefits {
   composes: benefits from '../../components/shared/section.css';
   background-color: var(--color-sky-blue);
