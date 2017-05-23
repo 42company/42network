@@ -2,7 +2,6 @@ import React from 'react'
 import update from 'immutability-helper'
 import style from './Contact.css'
 import tableify from 'tableify'
-import { Mandrill } from 'mandrill-api'
 
 export default class Contact extends React.Component {
   constructor (props) {
@@ -22,17 +21,18 @@ export default class Contact extends React.Component {
   handleSubmit (e) {
     e.preventDefault()
 
-    const mandrillClient = new Mandrill(process.env.MANDRILL_API_KEY)
-    const message = {
-      'html': tableify(this.state.formData),
-      'from_email': process.env.MANDRILL_ACCOUNT,
-      'to': [{'email': 'contact@42network.in'}]
-    }
     const alertMessage = 'Something goes wrong please send information to contact@42network.in'
-
-    mandrillClient.messages.send({ message }, (result) => {
+    fetch('/contact', {
+      method: 'POST',
+      body: JSON.stringify({ html: tableify(this.state.formData)}),
+      headers: {
+        'CONTENT-TYPE': 'application/json'
+      }
+    }).then((res) => {
+      return res.json()
+    }).then((result) => {
       result[0].status === 'sent' ? this.props.history.push('/sent', { sent: true }) : alert(alertMessage)
-    }, (error) => {
+    }).catch((error) => {
       alert(alertMessage)
     })
   }
