@@ -42,6 +42,11 @@
   composes: contact from '../../components/shared/section.css';
 }
 
+.contact-header {
+  composes: contact-header from '../../components/shared/section.css';
+  color: var(--color-sky-blue);
+}
+
 .description-wrapper {
   composes: description-wrapper from '../../components/shared/section.css';
 }

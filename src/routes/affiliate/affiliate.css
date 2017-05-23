@@ -64,6 +64,11 @@
   composes: contact from '../../components/shared/section.css';
 }
 
+.contact-header {
+  composes: contact-header from '../../components/shared/section.css';
+  color: var(--color-light-green);
+}
+
 .flex-description-content-container {
   composes: flex-description-content-container from '../../components/shared/section.css';
 }

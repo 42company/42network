@@ -53,7 +53,7 @@ export default class Advertiser extends React.Component {
             </div>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <Contact history={this.props.history}/>
+                <Contact history={this.props.history} partnerType='advertiser' />
               </div>
             </div>
           </div>
