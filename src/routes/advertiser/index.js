@@ -62,43 +62,45 @@ export default class Advertiser extends React.Component {
           <div className={style['benefits-section-container']}>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <div className={style['ic-performance']} />
-                <h3 className={style['benefits-header']}>TOP PERFORMANCE CAMPAIGNS</h3>
+                <div className={style['ic-quality']} />
+                <h3 className={style['benefits-header']}>QUALITY</h3>
                 <p className={style['benefits-description']}>
-                  - Exclusive Offers<br />
-                  - India Geo Specialisation<br />
-                  - Targeting
+                  - Key Performance areas can be set by you<br />
+                  - Traffic Targeting<br />
+                  - Optimisation
                 </p>
               </div>
             </div>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <div className={style['ic-technology-support']} />
-                <h3 className={style['benefits-header']}>TECHNOLOGY SUPPORT</h3>
+                <div className={style['ic-technology']} />
+                <h3 className={style['benefits-header']}>TECHNOLOGY</h3>
                 <p className={style['benefits-description']}>
-                  - Complete support for postback queries<br />
-                  - 24X7 tech support
+                  - Real time dashboard<br />
+                  - Optimisation as per performance result<br />
+                  - Budget Management<br />
+                  - Innovation development team at support for special campaigns
                 </p>
               </div>
             </div>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <div className={style['ic-ecpm']} />
-                <h3 className={style['benefits-header']}>TOP eCPM VALUES</h3>
+                <div className={style['ic-quantity']} />
+                <h3 className={style['benefits-header']}>QUANTITY</h3>
                 <p className={style['benefits-description']}>
-                  - Testing and Optimisation for best results<br />
-                  - 100% focus on performance
+                  - All India reach with localisation possible<br />
+                  - Wide variety of traffic services<br />
+                  - Wide variety of ad formats
                 </p>
               </div>
             </div>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <div className={style['ic-account-management']} />
-                <h3 className={style['benefits-header']}>DEDICATED ACCOUNT MANAGEMENT</h3>
+                <div className={style['ic-support']} />
+                <h3 className={style['benefits-header']}>DEDICATED SUPPORT</h3>
                 <p className={style['benefits-description']}>
-                  - Round the clock response<br />
-                  - Focus on ROI <br />
-                  - Key focus : no scrapping
+                  -Dedicated account managers for quick connect<br />
+                  -Partner with you for optimisation for maximum ROI
                 </p>
               </div>
             </div>

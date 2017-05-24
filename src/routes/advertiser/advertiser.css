@@ -82,26 +82,26 @@
   background-color: var(--color-sky-blue);
 }
 
-.ic-performance {
+.ic-quality {
   composes: ic from '../../components/shared/section.css';
-  background-image: url('./images/adv_img_1.png');
+  background-image: url('./images/ad_img_1.png');
 }
 
-.ic-technology-support {
+.ic-technology {
   composes: ic from '../../components/shared/section.css';
-  background-image: url('./images/adv_img_2.png');
+  background-image: url('./images/ad_img_2.png');
 }
 
-.ic-ecpm {
+.ic-quantity {
   composes: ic from '../../components/shared/section.css';
   margin-top: 20px;
-  background-image: url('./images/adv_img_3.png');
+  background-image: url('./images/ad_img_3.png');
 }
 
-.ic-account-management {
+.ic-support {
   composes: ic from '../../components/shared/section.css';
   margin-top: 20px;
-  background-image: url('./images/adv_img_4.png');
+  background-image: url('./images/ad_img_4.png');
 }
 
 .benefits-section-container {

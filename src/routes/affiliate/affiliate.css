@@ -82,23 +82,23 @@
   background-color: var(--color-light-green);
 }
 
-.ic-quality {
+.ic-performance {
   composes: ic from '../../components/shared/section.css';
   background-image: url('./images/affiliate_img_1.png');
 }
 
-.ic-technology {
+.ic-technology-support {
   composes: ic from '../../components/shared/section.css';
   background-image: url('./images/affiliate_img_2.png');
 }
 
-.ic-quantity {
+.ic-ecpm {
   composes: ic from '../../components/shared/section.css';
   margin-top: 20px;
   background-image: url('./images/affiliate_img_3.png');
 }
 
-.ic-support {
+.ic-account-management {
   composes: ic from '../../components/shared/section.css';
   margin-top: 20px;
   background-image: url('./images/affiliate_img_4.png');

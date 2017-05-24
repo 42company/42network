@@ -32,10 +32,12 @@ textarea {
 
 .affiliate-submit {
   composes: submit from '../shared/section.css';
+  width: 120px;
   background-color: var(--color-light-green);
 }
 
 .advertiser-submit {
+  width: 120px;
   composes: submit from '../shared/section.css';
   background-color: var(--color-sky-blue);
 }
