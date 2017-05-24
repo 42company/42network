@@ -106,7 +106,10 @@ export default class Affiliate extends React.Component {
         </section>
         <section className={style['slogan']}>
           <div className={style['section-container']}>
-            <h1>We deliver. That’s a promise!<br />Collaborate with 42Network and see your business grow</h1>
+            <h1>
+              Collaborate now!<br />
+              Our eCPMs are our best performance proof.
+            </h1>
           </div>
         </section>
       </Layout>

@@ -111,8 +111,8 @@ export default class Advertiser extends React.Component {
         <section className={style['slogan']}>
           <div className={style['section-container']}>
             <h1>
-              Collaborate now!<br />
-              Our eCPMs are our best performance proof.
+              We deliver. That’s a promise!<br />
+              Collaborate with 42Network and see your business grow
             </h1>
           </div>
         </section>
