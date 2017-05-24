@@ -22,7 +22,7 @@
 
 .banner-image {
   composes: banner-image from '../../components/shared/section.css';
-  background-image: url('./images/affiliates_header.png');
+  background-image: url('./images/affiliate_header.png');
 }
 
 .banner-description {
@@ -50,14 +50,14 @@
   composes: divider from '../../components/shared/section.css';
 }
 
-.ic-mobile {
+.ic-media {
   composes: contact-ic from '../../components/shared/section.css';
-  background-image: url('./images/affiliate_icon_mobileapps.png');
+  background-image: url('./images/affiliate_icon_media.png');
 }
 
-.ic-provider {
+.ic-network {
   composes: contact-ic from '../../components/shared/section.css';
-  background-image: url('./images/affiliate_icon_provider.png');
+  background-image: url('./images/affiliate_icon_adnetworkpng.png');
 }
 
 .contact {

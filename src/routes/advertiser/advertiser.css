@@ -22,7 +22,7 @@
 
 .banner-image {
   composes: banner-image from '../../components/shared/section.css';
-  background-image: url('./images/adv_header.png');
+  background-image: url('./images/ad_header.png');
 }
 
 .banner-description {
@@ -55,14 +55,14 @@
   composes: divider from '../../components/shared/section.css';
 }
 
-.ic-media {
+.ic-mobile {
   composes: contact-ic from '../../components/shared/section.css';
-  background-image: url('./images/adv_icon_media.png');
+  background-image: url('./images/ad_icon_mobileapps.png');
 }
 
-.ic-network {
+.ic-provider {
   composes: contact-ic from '../../components/shared/section.css';
-  background-image: url('./images/adv_icon_adnetworkpng.png');
+  background-image: url('./images/ad_icon_provider.png');
 }
 
 .contact {

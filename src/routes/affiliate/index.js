@@ -24,31 +24,29 @@ export default class Affiliate extends React.Component {
           <div className={style['section-container']}>
             <div className={style['flex-box']}>
               <div className={style['flex-description-content-container']}>
-                <div className={style['ic-mobile']} />
+                <div className={style['ic-media']} />
                 <div className={style['description-wrapper']}>
                   <h3 className={style['contact-header']}>
-                    MOBILE APPS
+                    MEDIA BUYERS
                   </h3>
                   <p className={style['description-body']}>
-                    We create value for your app depending on your growth phase.
-                    Whether it be installs or more. We aim at bringing you quality users and a clear ROI.
-                    Our expert teams help with best solutions for optimisation and most efficient return.
-                    Our knowledge of app mechanics helps us target the right users.
+                    At any given time we test 500+ camapigns on
+                    our network to evaluate performance and competitiveness.
+                    We focus on premium offers for premium media buyers
                   </p>
                 </div>
                 <div className={style['divider']} />
-                <div className={style['ic-provider']} />
+                <div className={style['ic-network']} />
                 <div className={style['description-wrapper']}>
                   <h3 className={style['contact-header']}>
-                    MOBILE SERVICE PROVIDERS
+                    AD NETWORKS
                   </h3>
                   <p className={style['description-body']}>
-                    We believe in delivering performance, be it CPI,CPL,CPM,CPC,CPA.
-                    You name it, we perform and deliver. Our traffic is good quality
-                    and we tie up with the best publishers to ensure the response
-                    is most efficient and as per your desired KPIs. We understand your
-                    business needs and partner with you as a network to achieve the
-                    best with maximum and best quality reach within performance parameters.
+                    We help you fill a 100% of your unsold inventory.
+                    Our monetisation on performance allows you to benchmark
+                    new traffic sources and find out what they are really worth.
+                    Our high ecpm values will help you raise the
+                    minimum bids for the media buyers in your network.
                   </p>
                 </div>
               </div>
