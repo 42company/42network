@@ -24,29 +24,31 @@ export default class Advertiser extends React.Component {
           <div className={style['section-container']}>
             <div className={style['flex-box']}>
               <div className={style['flex-description-content-container']}>
-                <div className={style['ic-media']} />
+                <div className={style['ic-mobile']} />
                 <div className={style['description-wrapper']}>
                   <h3 className={style['contact-header']}>
-                    MEDIA BUYERS
+                    MOBILE APPS
                   </h3>
                   <p className={style['description-body']}>
-                    At any given time we test 500+ camapigns on
-                    our network to evaluate performance and competitiveness.
-                    We focus on premium offers for premium media buyers
+                    We create value for your app depending on your growth phase.
+                    Whether it be installs or more. We aim at bringing you quality users and a clear ROI.
+                    Our expert teams help with best solutions for optimisation and most efficient return.
+                    Our knowledge of app mechanics helps us target the right users.
                   </p>
                 </div>
                 <div className={style['divider']} />
-                <div className={style['ic-network']} />
+                <div className={style['ic-provider']} />
                 <div className={style['description-wrapper']}>
                   <h3 className={style['contact-header']}>
-                    AD NETWORKS
+                    MOBILE SERVICE PROVIDERS
                   </h3>
                   <p className={style['description-body']}>
-                    We help you fill a 100% of your unsold inventory.
-                    Our monetisation on performance allows you to benchmark
-                    new traffic sources and find out what they are really worth.
-                    Our high ecpm values will help you raise the
-                    minimum bids for the media buyers in your network.
+                    We believe in delivering performance, be it CPI,CPL,CPM,CPC,CPA.
+                    You name it, we perform and deliver. Our traffic is good quality
+                    and we tie up with the best publishers to ensure the response
+                    is most efficient and as per your desired KPIs. We understand your
+                    business needs and partner with you as a network to achieve the
+                    best with maximum and best quality reach within performance parameters.
                   </p>
                 </div>
               </div>
@@ -62,43 +64,45 @@ export default class Advertiser extends React.Component {
           <div className={style['benefits-section-container']}>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <div className={style['ic-performance']} />
-                <h3 className={style['benefits-header']}>TOP PERFORMANCE CAMPAIGNS</h3>
+                <div className={style['ic-quality']} />
+                <h3 className={style['benefits-header']}>QUALITY</h3>
                 <p className={style['benefits-description']}>
-                  - Exclusive Offers<br />
-                  - India Geo Specialisation<br />
-                  - Targeting
+                  - Key Performance areas can be set by you<br />
+                  - Traffic Targeting<br />
+                  - Optimisation
                 </p>
               </div>
             </div>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <div className={style['ic-technology-support']} />
-                <h3 className={style['benefits-header']}>TECHNOLOGY SUPPORT</h3>
+                <div className={style['ic-technology']} />
+                <h3 className={style['benefits-header']}>TECHNOLOGY</h3>
                 <p className={style['benefits-description']}>
-                  - Complete support for postback queries<br />
-                  - 24X7 tech support
+                  - Real time dashboard<br />
+                  - Optimisation as per performance result<br />
+                  - Budget Management<br />
+                  - Innovation development team at support for special campaigns
                 </p>
               </div>
             </div>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <div className={style['ic-ecpm']} />
-                <h3 className={style['benefits-header']}>TOP eCPM VALUES</h3>
+                <div className={style['ic-quantity']} />
+                <h3 className={style['benefits-header']}>QUANTITY</h3>
                 <p className={style['benefits-description']}>
-                  - Testing and Optimisation for best results<br />
-                  - 100% focus on performance
+                  - All India reach with localisation possible<br />
+                  - Wide variety of traffic services<br />
+                  - Wide variety of ad formats
                 </p>
               </div>
             </div>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <div className={style['ic-account-management']} />
-                <h3 className={style['benefits-header']}>DEDICATED ACCOUNT MANAGEMENT</h3>
+                <div className={style['ic-support']} />
+                <h3 className={style['benefits-header']}>DEDICATED SUPPORT</h3>
                 <p className={style['benefits-description']}>
-                  - Round the clock response<br />
-                  - Focus on ROI <br />
-                  - Key focus : no scrapping
+                  -Dedicated account managers for quick connect<br />
+                  -Partner with you for optimisation for maximum ROI
                 </p>
               </div>
             </div>
@@ -107,8 +111,8 @@ export default class Advertiser extends React.Component {
         <section className={style['slogan']}>
           <div className={style['section-container']}>
             <h1>
-              Collaborate now!<br />
-              Our eCPMs are our best performance proof.
+              We deliver. That’s a promise!<br />
+              Collaborate with 42Network and see your business grow
             </h1>
           </div>
         </section>
