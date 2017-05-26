@@ -79,7 +79,7 @@
 
 .benefits {
   composes: benefits from '../../components/shared/section.css';
-  background-color: var(--color-sky-blue);
+  background-color: var(--color-light-green);
 }
 
 .ic-quality {
@@ -118,7 +118,7 @@
 
 .slogan {
   composes: slogan from '../../components/shared/section.css';
-  background-color: var(--color-light-green);
+  background-color: var(--color-sky-blue);
 }
 
 .slogan-description {

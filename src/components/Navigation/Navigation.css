@@ -10,19 +10,21 @@
   font-size: 15px;
   margin-right: 25px;
   border-bottom: 1px solid rgba(255,255,255,0);
-  transition: border-color .3s ease-in;
 }
 
 .link:hover {
   border-color: rgba(255,255,255,0.7);
+  transition: border-color 500ms ease-in;
 }
 
 .active:hover {
   border-color: rgba(255,255,255,1);
+  transition: border-color 500ms ease-in;
 }
 
 .active {
   border-color: rgba(255,255,255,1);
+  transition: border-color 500ms ease-in;
 }
 
 .link:last-of-type {
@@ -35,6 +37,6 @@
   }
 
   .link:last-of-type {
-    margin-right: 0px;
+    margin-right: 5px;
   }
 }

@@ -1,14 +1,14 @@
 import React from 'react'
+import animate from 'animate.css'
+import ScrollAnimation from '../../components/utils/ScrollAnimation'
 import Layout from '../../components/Layout'
 import Contact from '../../components/Contact'
 import style from './affiliate.css'
 
 export default class Affiliate extends React.Component {
-  componentDidMount(prevProps) {
-    window.scrollTo(0, 0)
-  }
-
   render () {
+    const scrollFadeInProps = { animateIn: `${animate['animated']} ${animate['fadeIn']}` }
+
     return (
       <Layout>
         <section className={style['banner']}>
@@ -62,7 +62,9 @@ export default class Affiliate extends React.Component {
           <div className={style['benefits-section-container']}>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <div className={style['ic-performance']} />
+                <ScrollAnimation {...scrollFadeInProps}>
+                  <div className={style['ic-performance']} />
+                </ScrollAnimation>
                 <h3 className={style['benefits-header']}>TOP PERFORMANCE CAMPAIGNS</h3>
                 <p className={style['benefits-description']}>
                   - Exclusive Offers<br />
@@ -73,7 +75,9 @@ export default class Affiliate extends React.Component {
             </div>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <div className={style['ic-technology-support']} />
+                <ScrollAnimation {...scrollFadeInProps}>
+                  <div className={style['ic-technology-support']} />
+                </ScrollAnimation>
                 <h3 className={style['benefits-header']}>TECHNOLOGY SUPPORT</h3>
                 <p className={style['benefits-description']}>
                   - Complete support for postback queries<br />
@@ -83,7 +87,9 @@ export default class Affiliate extends React.Component {
             </div>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <div className={style['ic-ecpm']} />
+                <ScrollAnimation {...scrollFadeInProps}>
+                  <div className={style['ic-ecpm']} />
+                </ScrollAnimation>
                 <h3 className={style['benefits-header']}>TOP eCPM VALUES</h3>
                 <p className={style['benefits-description']}>
                   - Testing and Optimisation for best results<br />
@@ -93,7 +99,9 @@ export default class Affiliate extends React.Component {
             </div>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <div className={style['ic-account-management']} />
+                <ScrollAnimation {...scrollFadeInProps}>
+                  <div className={style['ic-account-management']} />
+                </ScrollAnimation>
                 <h3 className={style['benefits-header']}>DEDICATED ACCOUNT MANAGEMENT</h3>
                 <p className={style['benefits-description']}>
                   - Round the clock response<br />
