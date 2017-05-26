@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Layout from '../../components/Layout'
 import animate from 'animate.css'
+import Layout from '../../components/Layout'
 import ScrollAnimation from '../../components/utils/ScrollAnimation'
 import style from './home.css'
 import skyLine from './images/bottom_skyline.png'

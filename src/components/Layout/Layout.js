@@ -1,6 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types' // eslint-disable-next-line
-import style from './Layout.css'
+import PropTypes from 'prop-types'
+import './Layout.css'
 import Header from '../Header'
 import Footer from '../Footer'
 
