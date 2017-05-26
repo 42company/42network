@@ -1,16 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Layout from '../../components/Layout'
+import animate from 'animate.css'
+import ScrollAnimation from '../../components/utils/ScrollAnimation'
 import style from './home.css'
-import introImage from './images/img_intro_4.png'
 import skyLine from './images/bottom_skyline.png'
 
 export default class Home extends React.Component {
-  componentDidMount(prevProps) {
-    window.scrollTo(0, 0)
-  }
-
   render () {
+    const scrollFadeInProps = { animateIn: `${style['advertise-partner-container']} ${animate['fadeIn']} ${animate['animated']}` }
+
     return (
       <Layout>
         <div className={style['root']}>
@@ -22,7 +21,11 @@ export default class Home extends React.Component {
                 <Link className={style['normal-advertiser-button']} to='/advertiser'>Advertisers</Link>
               </div>
             </div>
-            <img className={style['intro-image']} src={introImage} width='100%' alt='42network-intro' />
+            <div className={style['intro-image-wrapper']}>
+              <div className={style['intro-image-device']}/>
+              <div className={style['intro-image-graph']}/>
+              <div className={style['intro-image-cloud']}/>
+            </div>
           </section >
           <section className={style['description']}>
             <div className={style['section-container']}>
@@ -37,7 +40,9 @@ export default class Home extends React.Component {
           </section>
           <section className={style['diagram-bg']}>
             <div className={style['section-container']}>
-              <div className={style['diagram']} />
+              <ScrollAnimation animateIn={`${animate['fadeIn']} ${animate['animated']}`}>
+                <div className={style['diagram']} />
+              </ScrollAnimation>
               <div className={style['be-a-partner']}>
                 <div className={style['affiliates']}>
                   <div className={style['flex-container']}>
@@ -67,34 +72,34 @@ export default class Home extends React.Component {
               <div className={style['advertise-partners-header']}>
                 Our Advertising partners
               </div>
-              <div className={style['partner-wrapper']}>
-                <div className={style['advertise-partner-container']}>
-                  <div className={style['ic-dogether']} />
+                <div className={style['partner-wrapper']}>
+                  <ScrollAnimation {...scrollFadeInProps}>
+                    <div className={style['ic-dogether']} />
+                  </ScrollAnimation>
+                  <ScrollAnimation {...scrollFadeInProps}>
+                    <div className={style['ic-myntra']} />
+                  </ScrollAnimation>
+                  <ScrollAnimation {...scrollFadeInProps}>
+                    <div className={style['ic-flipkart']} />
+                  </ScrollAnimation>
+                  <ScrollAnimation {...scrollFadeInProps}>
+                    <div className={style['ic-orahi']} />
+                  </ScrollAnimation>
+                  <ScrollAnimation {...scrollFadeInProps}>
+                    <div className={style['ic-uc']} />
+                  </ScrollAnimation>
+                  <ScrollAnimation {...scrollFadeInProps}>
+                    <div className={style['ic-abof']} />
+                  </ScrollAnimation>
+                  <ScrollAnimation {...scrollFadeInProps}>
+                    <div className={style['ic-buyhatke']} />
+                  </ScrollAnimation>
+                  <ScrollAnimation {...scrollFadeInProps}>
+                    <div className={style['ic-panelstation']} />
+                  </ScrollAnimation>
                 </div>
-                <div className={style['advertise-partner-container']}>
-                  <div className={style['ic-myntra']} />
-                </div>
-                <div className={style['advertise-partner-container']}>
-                  <div className={style['ic-flipkart']} />
-                </div>
-                <div className={style['advertise-partner-container']}>
-                  <div className={style['ic-orahi']} />
-                </div>
-                <div className={style['advertise-partner-container']}>
-                  <div className={style['ic-uc']} />
-                </div>
-                <div className={style['advertise-partner-container']}>
-                  <div className={style['ic-abof']} />
-                </div>
-                <div className={style['advertise-partner-container']}>
-                  <div className={style['ic-buyhatke']} />
-                </div>
-                <div className={style['advertise-partner-container']}>
-                  <div className={style['ic-panelstation']} />
-                </div>
-              </div>
             </div>
-            <img className={style['intro-image']} src={skyLine} width='100%' alt='skyline' />
+            <img className={style['home-bottom-image']} src={skyLine} width='100%' alt='skyline' />
           </section>
         </div>
       </Layout>

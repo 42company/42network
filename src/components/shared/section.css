@@ -43,6 +43,8 @@
 }
 
 .banner-image {
+  animation-delay: 0.2s;
+  animation-duration: 0.5s;
   width: 138px;
   height: 138px;
   background-size: contain;

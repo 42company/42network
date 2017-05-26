@@ -1,14 +1,14 @@
 import React from 'react'
+import animate from 'animate.css'
+import ScrollAnimation from '../../components/utils/ScrollAnimation'
 import Layout from '../../components/Layout'
 import Contact from '../../components/Contact'
 import style from './advertiser.css'
 
 export default class Advertiser extends React.Component {
-  componentDidMount(prevProps) {
-    window.scrollTo(0, 0)
-  }
-
   render () {
+    const scrollFadeInProps = { animateIn: `${animate['animated']} ${animate['fadeIn']}` }
+
     return (
       <Layout>
         <section className={style['banner']}>
@@ -64,7 +64,9 @@ export default class Advertiser extends React.Component {
           <div className={style['benefits-section-container']}>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <div className={style['ic-quality']} />
+                <ScrollAnimation {...scrollFadeInProps}>
+                  <div className={style['ic-quality']} />
+                </ScrollAnimation>
                 <h3 className={style['benefits-header']}>QUALITY</h3>
                 <p className={style['benefits-description']}>
                   - Key Performance areas can be set by you<br />
@@ -75,7 +77,9 @@ export default class Advertiser extends React.Component {
             </div>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <div className={style['ic-technology']} />
+                <ScrollAnimation {...scrollFadeInProps}>
+                  <div className={style['ic-technology']} />
+                </ScrollAnimation>
                 <h3 className={style['benefits-header']}>TECHNOLOGY</h3>
                 <p className={style['benefits-description']}>
                   - Real time dashboard<br />
@@ -87,7 +91,9 @@ export default class Advertiser extends React.Component {
             </div>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <div className={style['ic-quantity']} />
+                <ScrollAnimation {...scrollFadeInProps}>
+                  <div className={style['ic-quantity']} />
+                </ScrollAnimation>
                 <h3 className={style['benefits-header']}>QUANTITY</h3>
                 <p className={style['benefits-description']}>
                   - All India reach with localisation possible<br />
@@ -98,7 +104,9 @@ export default class Advertiser extends React.Component {
             </div>
             <div className={style['flex-box']}>
               <div className={style['flex-content-container']}>
-                <div className={style['ic-support']} />
+                <ScrollAnimation {...scrollFadeInProps}>
+                  <div className={style['ic-support']} />
+                </ScrollAnimation>
                 <h3 className={style['benefits-header']}>DEDICATED SUPPORT</h3>
                 <p className={style['benefits-description']}>
                   -Dedicated account managers for quick connect<br />
