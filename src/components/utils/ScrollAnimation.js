@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import throttle from "lodash.throttle";
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"
+import ReactTimeout from 'react-timeout'
 
-export default class ScrollAnimation extends Component {
+class ScrollAnimation extends Component {
   static posTop() {
     if (typeof window.pageYOffset !== "undefined") {
       return window.pageYOffset;
@@ -36,14 +37,13 @@ export default class ScrollAnimation extends Component {
   }
 
   componentWillUnmount() {
-    this.setState({elementBottom: '', elementTop: '', classes: '', style: '', lastVisibility:'', timeouts: ''})
+    window.scrollTo(0, 0)
     if (window && window.addEventListener) {
       this.state.timeouts.forEach(function(tid) {
         clearTimeout(tid);
       })
       window.removeEventListener("scroll", this.handleScroll.bind(this));
     }
-    window.scrollTo(0, 0)
   }
 
   handleScroll() {
@@ -136,3 +136,5 @@ ScrollAnimation.propTypes = {
   delay: PropTypes.number,
   initiallyVisible: PropTypes.bool
 };
+
+export default ReactTimeout(ScrollAnimation)
